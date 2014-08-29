@@ -1,0 +1,20 @@
+<extension>
+    <modules>
+    
+        <module>
+            <id>Noindex module</id>
+            <auto-deploy>true</auto-deploy>
+            
+             <configurations>
+                <config evaluator="string-compare" condition="DocumentLibrary">
+                    <aspects>
+                        <visible>
+                            <aspect name="noindex:applied" />
+                        </visible>
+                    </aspects>
+                </config>
+            </configurations>
+        </module>
+
+    </modules>
+</extension>
